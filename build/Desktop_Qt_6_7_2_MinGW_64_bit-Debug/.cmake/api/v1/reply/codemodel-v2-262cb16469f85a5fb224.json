@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-dc5ec2e4d452504079f4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FileSorter",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-8c8556e5a6f41d483876.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-18a4a5a4f36b4b29bc82.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-5dd4146df470f2b30149.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-001ceb216d7a51affa75.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter-Debug-bd50200ab85a13703319.json",
+					"name" : "appFileSorter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_autogen-Debug-9e382574fde061213d82.json",
+					"name" : "appFileSorter_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_autogen_timestamp_deps-Debug-5bf98a48efc31d191b61.json",
+					"name" : "appFileSorter_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_qmlimportscan-Debug-0b767e53bfb98449c3fd.json",
+					"name" : "appFileSorter_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_qmllint-Debug-9f3ce9f8caccfb29f236.json",
+					"name" : "appFileSorter_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_qmllint_json-Debug-07e8f52c2b91857cb70e.json",
+					"name" : "appFileSorter_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_qmllint_module-Debug-e1e25d87ae23b3cdb431.json",
+					"name" : "appFileSorter_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_qmltyperegistration-Debug-a9d69496302d03367869.json",
+					"name" : "appFileSorter_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appFileSorter_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appFileSorter_tooling-Debug-520df95dbdddf8b3e165.json",
+					"name" : "appFileSorter_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/jayem/Downloads/FileSorter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
