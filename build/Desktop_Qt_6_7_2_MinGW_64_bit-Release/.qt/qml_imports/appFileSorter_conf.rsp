@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/jayem/Downloads/FileSorter
+-cmake-output
+-output-file
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/qml_imports/appFileSorter_conf.cmake
+-importPath
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter
+-importPath
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release
+-importPath
+C:/Qt/6.7.2/mingw_64/./qml
+-qrcFiles
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qmake_FileSorter.qrc
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/appFileSorter_raw_qml_0.qrc

@@ -4,8 +4,6 @@
 
 int main(int argc, char *argv[])
 {
-    qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
-
     QGuiApplication app(argc, argv);
     FileDataHandler* dataHandler = new FileDataHandler(&app);
     qmlRegisterSingletonInstance("FileSorter", 1, 0, "FileDataHandler", dataHandler);

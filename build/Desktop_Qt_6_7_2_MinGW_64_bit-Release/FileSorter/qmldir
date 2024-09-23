@@ -1,0 +1,11 @@
+module FileSorter
+typeinfo appFileSorter.qmltypes
+prefer :/qt/qml/FileSorter/
+Main 1.0 Main.qml
+singleton ColorProperties 1.0 ColorProperties.qml
+CustomCheckBox 1.0 CustomCheckBox.qml
+MainHeader 1.0 MainHeader.qml
+singleton CustomFonts 1.0 CustomFonts.qml
+SortSettings 1.0 SortSettings.qml
+CustomExplorer 1.0 CustomExplorer.qml
+

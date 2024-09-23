@@ -62,12 +62,12 @@ Rectangle{
         TextField{
             id: searchbarField
             readOnly: true
-            text: currentFolderPath
+            text: currentFolderPathAsLocalFile !== "" ? currentFolderPathAsLocalFile : "Click folder to browse for a path"
             font.pixelSize: Math.round((headerRow.height * .3)/3) //referencing our own height causes a binding loop since it isn't explicitly set
             font.family: CustomFonts.montserrat
             font.weight: Font.DemiBold
             Layout.alignment: Qt.AlignHCenter
-            color: ColorProperties.textColor
+            color: currentFolderPathAsLocalFile !== "" ? "#828BB0" : ColorProperties.baseColorBright
 
             background: Rectangle{
                 color: Qt.lighter(ColorProperties.baseColor, 1.5)
@@ -79,7 +79,17 @@ Rectangle{
 
             focusPolicy: Qt.NoFocus
 
-            // placeholderText: qsTr("Click folder to browse for a path")
+            Component.onCompleted: {
+                console.log(currentFolderPathAsLocalFile !== "")
+                console.log("BARS", currentFolderPathAsLocalFile)
+            }
+
+            onDisplayTextChanged: {
+                if (window.currentFolderPath !== ""){
+
+                }
+            }
+
 
             onHoveredChanged: {
                 if(hovered)
@@ -101,13 +111,15 @@ Rectangle{
             font.family: CustomFonts.montserrat
             font.weight: Font.DemiBold
             text: qsTr("Extension Type")
+            elide: Text.ElideLeft
             font.pixelSize: Math.round((headerRow.height * .3)/3)
             color: "#ffffff"
+
         }
 
         TextField{
             id: fileExtensionField
-            font.pixelSize: Math.round((headerRow.height * .3)/3) //referencing our own height causes a binding loop since it isn't explicitly set
+            font.pixelSize: Math.round((headerRow.height * .3)/4) //referencing our own height causes a binding loop since it isn't explicitly set
             Layout.alignment: Qt.AlignRight
             color: ColorProperties.textColor
             font.capitalization: Font.AllLowercase
@@ -124,7 +136,12 @@ Rectangle{
             }
             onHoveredChanged: {
                 if(hovered)
-                    infoText = "Type the file extension you want to search for (e.g., 'txt' or 'jpg'). Remember to include the '.' as the first character."
+                    infoText = "Type the file extension you want to search for (e.g., 'txt' or 'jpg'.)"
+            }
+
+            onFocusChanged: {
+                console.log(sortSettings)
+                sortSettings.refreshAll()
             }
 
             onEditingFinished: {
@@ -135,8 +152,11 @@ Rectangle{
                     //Check if text contains only 1 dot
                     if(text.split('.').length === 2){
                         FileDataHandler.extensionType = text
+                        sortSettings.refreshAll()
                     }
                 }
+
+
             }
 
             Component.onCompleted: {

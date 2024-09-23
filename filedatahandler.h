@@ -19,6 +19,8 @@ class FileDataHandler : public QFileSystemModel
     Q_PROPERTY(QStringList fileList READ fileList WRITE setFileList NOTIFY fileListChanged)
     Q_PROPERTY(QString extensionType READ extensionType WRITE setExtensionType NOTIFY extensionTypeChanged)
     Q_PROPERTY(QStringList fileNameList READ fileNameList WRITE setFileNameList NOTIFY fileNameListChanged)
+    Q_PROPERTY(bool placeInNewFolder READ placeInNewFolder WRITE setPlaceInNewFolder NOTIFY placeInNewFolderChanged FINAL)
+    Q_PROPERTY(QString newFolderName READ newFolderName WRITE setNewFolderName NOTIFY newFolderNameChanged FINAL)
 
 public:
     FileDataHandler(QObject * parent = nullptr);
@@ -51,13 +53,23 @@ public:
     QStringList fileNameList() const;
     void setFileNameList(const QStringList &newFileNameList);
 
+
+    bool placeInNewFolder() const;
+    void setPlaceInNewFolder(bool newPlaceInNewFolder);
+
+    QString newFolderName() const;
+    void setNewFolderName(const QString &newNewFolderName);
+
 public slots:
     void setRootDirectory(QUrl selectedFolderPath);
     void addItems(int count);
     void setFileListDefault();
     void editFile(QUrl folderDirectory, int index, QString fileName, QString prefix = "", QString suffix = "");
+    QString createNewFolder(QUrl folderDirectory);
     void emptyFileListModel();
-     void setFilters();
+    void setFilters();
+    void showDirectoryInExplorer(QUrl folderDirectory);
+    QString urlToLocalFile(QUrl url);
 
 signals:
 
@@ -69,13 +81,20 @@ signals:
 
     void fileNameListChanged();
 
+    void placeInNewFolderChanged();
+
+    void newFolderNameChanged();
+
 private:
+
     QUrl defaultPath;
     QModelIndex m_rootIndex;
     QStringListModel *m_files = new QStringListModel(this);
     QStringList m_fileList;
     QString m_extensionType = ".txt";
     QStringList m_fileNameList;
+    bool m_placeInNewFolder;
+    QString m_newFolderName;
 };
 
 #endif // FILEDATAHANDLER_H

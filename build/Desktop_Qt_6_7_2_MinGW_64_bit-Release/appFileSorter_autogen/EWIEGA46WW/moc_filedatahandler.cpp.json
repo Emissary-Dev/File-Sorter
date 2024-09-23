@@ -1,0 +1,231 @@
+{
+    "classes": [
+        {
+            "className": "FileDataHandler",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "rootIndex",
+                    "notify": "rootIndexChanged",
+                    "read": "rootIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QModelIndex",
+                    "user": false,
+                    "write": "setRootIndex"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "files",
+                    "notify": "filesChanged",
+                    "read": "files",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringListModel*",
+                    "user": false,
+                    "write": "setFiles"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "fileList",
+                    "notify": "fileListChanged",
+                    "read": "fileList",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "write": "setFileList"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "extensionType",
+                    "notify": "extensionTypeChanged",
+                    "read": "extensionType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setExtensionType"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "fileNameList",
+                    "notify": "fileNameListChanged",
+                    "read": "fileNameList",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "write": "setFileNameList"
+                }
+            ],
+            "qualifiedClassName": "FileDataHandler",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "rootIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "filesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fileListChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "extensionTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fileNameListChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "selectedFolderPath",
+                            "type": "QUrl"
+                        }
+                    ],
+                    "name": "setRootDirectory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "addItems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "setFileListDefault",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folderDirectory",
+                            "type": "QUrl"
+                        },
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "fileName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "prefix",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "suffix",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "editFile",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folderDirectory",
+                            "type": "QUrl"
+                        },
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "fileName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "prefix",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "editFile",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folderDirectory",
+                            "type": "QUrl"
+                        },
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "fileName",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "editFile",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "emptyFileListModel",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "setFilters",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QFileSystemModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "filedatahandler.h",
+    "outputRevision": 68
+}

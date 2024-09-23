@@ -1,0 +1,11 @@
+--resource
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qmake_FileSorter.qrc
+--resource
+C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/appFileSorter_raw_qml_0.qrc
+/qt/qml/FileSorter/Main.qml
+/qt/qml/FileSorter/ColorProperties.qml
+/qt/qml/FileSorter/CustomCheckBox.qml
+/qt/qml/FileSorter/MainHeader.qml
+/qt/qml/FileSorter/CustomFonts.qml
+/qt/qml/FileSorter/SortSettings.qml
+/qt/qml/FileSorter/CustomExplorer.qml
