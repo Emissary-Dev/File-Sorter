@@ -8,6 +8,7 @@ import FileSorter
 
 Window {
     id: window
+
     property url currentFolderPath: ""
     property string currentFolderPathAsLocalFile: ""
     property bool folderOpen: false
@@ -19,33 +20,38 @@ Window {
     property string infoText
     signal selectAll()
     signal deselectAll()
+    signal refreshComplete()
 
     width: 640
     height: 600
     visible: true
     title: qsTr("FileSorter")
 
-
     FolderDialog{
         id:folderDialog
+
         title: "Select a folder with the " + extensionType + " files you want to organize"
         options: folderDialog.ReadOnly
         onAccepted: {
             currentFolderPath = selectedFolder
-           currentFolderPathAsLocalFile =  FileDataHandler.urlToLocalFile(selectedFolder)
+            currentFolderPathAsLocalFile =  FileDataHandler.urlToLocalFile(selectedFolder)
             folderOpen = false
             refreshFileLists();
         }
-        onRejected:{
-            folderOpen = false
-        }
+        onRejected: folderOpen = false
     }
 
     function refreshFileLists(){
         FileDataHandler.extensionType = header.fileExtensionField.text
         FileDataHandler.emptyFileListModel() //empty model to empty out GridView
-         FileDataHandler.setFilters()
-        FileDataHandler.setRootDirectory(currentFolderPath)//fills Grid View (always have this be the 2nd thing you run)
+        FileDataHandler.setFilters()
+
+        if(currentFolderPath.toString() === ""){
+            currentFolderPath = FileDataHandler.defaultPath
+            currentFolderPathAsLocalFile =  FileDataHandler.urlToLocalFile(currentFolderPath)
+        }
+
+        FileDataHandler.setRootDirectory(currentFolderPath)//fills Grid View (correct placement of this code is crucial)
 
         //empty file name list, then add the same number of empty slots as there are rows in the files QList
         //empty checked file list, then add the same number of Checked (default) slots as there are rows in the files QList
@@ -55,33 +61,30 @@ Window {
             editedFileNameList.push("")
             checkedFileList.push("Checked")
         }
-        console.log("REFRESH", extensionType)
+        refreshComplete()
     }
-
 
     ColumnLayout{
         id: coreStructure
         anchors.fill: parent
         spacing: 0
-
+        
         MainHeader{
             id:header
-
         }
 
         //Custom Explorer (Seperate file avoided to make signal handling convenient)
         Rectangle{
             id: customExplorerBg
-
-
-
-
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: ColorProperties.baseColor }
-                GradientStop { position: 1.0; color: "#323951" }
-            }
             Layout.fillWidth: true
             Layout.fillHeight: true
+
+            Image{
+                source: "Images/BackgroundRadialGradient.png"
+                anchors.fill: parent
+                fillMode: Image.Stretch
+            }
+
             MouseArea{
                 anchors.fill: parent
                 onClicked: customExplorerItemGrid.forceActiveFocus()
@@ -98,13 +101,21 @@ Window {
                         anchors.bottom: parent.bottom
                         policy: ScrollBar.AsNeeded
 
-                        background: Rectangle{
-                            color: ColorProperties.brandColorBright
+                        contentItem: Rectangle {
+                            implicitWidth: window.width * .015
+                            implicitHeight: window.height * .8
+                            radius: width / 2
+                            color: ColorProperties.baseColorMidBright
                         }
 
+                        background: Rectangle{
+                            color: "transparent"
+                        }
                     }
+
+
                     /*Layouts have issues dynamically resizing when wrapped around a scrollview (spent 2hr+ trying different methods to fix the issue)
-                     so we're using GridView (plus this method appears to be more efficient)*/
+                      so we're using GridView (plus this method appears to be more efficient)*/
                     GridView{
                         id:customExplorerItemGrid
 
@@ -114,16 +125,14 @@ Window {
                         cellHeight: customExplorerScrollView.height * .4
 
                         delegate: MouseArea{
-
                             property var fileNameExtraction
 
                             hoverEnabled: true
                             width: customExplorerItemGrid.cellWidth *.9
                             height: customExplorerItemGrid.cellHeight *.9
                             acceptedButtons: Qt.LeftButton | Qt.RightButton
-                            onClicked:
-                            {   editableName.forceActiveFocus()}
 
+                            onClicked: editableName.forceActiveFocus()
                             onEntered: infoText = "Click to edit file name."
 
                             Rectangle{
@@ -132,7 +141,23 @@ Window {
                                 anchors.fill: parent
                                 color: "transparent"
 
+                                //Animation:
 
+                                ScaleAnimator{
+                                    id:fileIconScaleUp
+                                    target: itemImage
+                                    from: itemImage.scale
+                                    to: 1.2
+                                    duration: 100
+                                }
+
+                                ScaleAnimator{
+                                    id:fileIconScaleDown
+                                    target: itemImage
+                                    from: itemImage.scale
+                                    to: 1
+                                    duration: 100
+                                }
 
                                 ColumnLayout{
                                     id: itemContainer
@@ -143,46 +168,42 @@ Window {
                                         Layout.fillWidth: true
                                         Layout.preferredHeight: selectionIndicator.height * .3
                                         Layout.alignment: Qt.AlignHCenter
+
                                         Image {
                                             //You handle the colors of an icon through the icon file itself
-                                            anchors.horizontalCenter: parent.horizontalCenter
+                                            anchors.centerIn: parent
                                             id: itemImage
-                                            source:     "Icons/doument-outline-green.svg"
+                                            source:     "Icons/document-outline-green.svg"
                                             fillMode: Image.PreserveAspectFit
                                             sourceSize: Qt.size(64,64)
                                             width: selectionIndicator.width
                                             height:  selectionIndicator.height * .3
-
-
-
-                                            antialiasing: true
                                             smooth: false
-
                                         }
 
                                         CustomCheckBox{
                                             id: fileSelectionCheckBox
+
+                                            property real myWidth: 0
+                                            property real myHeight: 0
                                             anchors.top: parent.top
                                             anchors.right: parent.right
-                                            width: selectionIndicator.width * .2
-                                            height:  selectionIndicator.height * .2
+                                            width: myWidth
+                                            height: myHeight
+
                                             onClicked: {
-                                                if(checked){
+                                                if(checked)
                                                     checkedFileList[index] = "Checked"
-                                                }
-                                                else{
+                                                else
                                                     checkedFileList[index] = ""
-                                                }
-
-                                                if (checkedFileList)
-                                                checked = checkedFileList[index] === "Checked"
-
-                                                console.log(checkedFileList)
                                             }
 
                                             Component.onCompleted: {
+                                                myWidth = selectionIndicator.width * .15
+                                                myHeight = boxWidth
+
                                                 if (checkedFileList)
-                                                checked = checkedFileList[index] === "Checked"
+                                                    fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
                                             }
 
                                             Connections{
@@ -191,19 +212,22 @@ Window {
                                                 //new syntax for signal handling (QML 5.15)
                                                 function onSelectAll(){
                                                     for(var i = 0; i < checkedFileList.length; i++){
-                                                         checkedFileList[i] = "Checked"
+                                                        checkedFileList[i] = "Checked"
                                                     }
-                                                     fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
-                                                    console.log("BRUHLOM", checkedFileList)
+                                                    fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
                                                 }
-                                                function onDeselectAll(){
 
+                                                function onDeselectAll(){
                                                     for(var i = 0; i < checkedFileList.length; i++){
-                                                         checkedFileList[i] = ""
+                                                        checkedFileList[i] = ""
                                                     }
 
-             fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
-                                                    console.log("BRUHLOMS",  checkedFileList, checkedFileList.length)
+                                                    fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
+                                                }
+
+                                                function onRefreshComplete(){
+                                                    if (checkedFileList)
+                                                        fileSelectionCheckBox.checked = checkedFileList[index] === "Checked"
                                                 }
                                             }
                                         }
@@ -211,19 +235,20 @@ Window {
 
                                     TextField{
                                         id: editableName
-                                        color: ColorProperties.textColor
-                                        font.family: CustomFonts.montserrat
-                                        font.weight: Font.DemiBold
-                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
-                                        text: fileNameExtraction
-                                        Layout.preferredWidth: selectionIndicator.width * .8
-                                        Layout.preferredHeight: selectionIndicator.height * .2
                                         clip: true
                                         topInset: 0
                                         bottomInset: 0
                                         rightInset: 0
                                         leftInset: 0
+                                        text: fileNameExtraction
+                                        color: ColorProperties.textColor
+                                        font.family: CustomFonts.montserrat
+                                        font.weight: Font.DemiBold
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                                        Layout.preferredWidth: selectionIndicator.width * .8
+                                        Layout.preferredHeight: selectionIndicator.height * .2
                                         horizontalAlignment: text.length < 25 ? Text.AlignHCenter : Text.AlignLeft
+                                        
                                         Component.onCompleted: {
                                             //Extract file name
                                             fileNameExtraction = display;
@@ -254,14 +279,24 @@ Window {
                                                 height: parent.height * .04
                                                 radius: 10
                                             }
-
                                         }
-
                                     }
                                 }
 
                                 HoverHandler{
                                     id: hoverHandler
+
+                                    onHoveredChanged: {
+                                        if(hovered){
+                                            fileIconScaleUp.running = true
+                                            fileIconScaleDown.running = false
+                                        }
+                                        else
+                                        {
+                                            fileIconScaleDown.running = true
+                                            fileIconScaleUp.running = false
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -274,15 +309,12 @@ Window {
         //Note: Direct child of ColumnLayout
         SortSettings{
             id: sortSettings
-
             Connections{
                 target: sortSettings
                 function onSelectAllPressed() {
-                    console.log("SelectAll")
                     window.selectAll()
                 }
-                  function onDeselectAllPressed() {
-                                 console.log("DeselectAll")
+                function onDeselectAllPressed() {
                     window.deselectAll()
                 }
             }

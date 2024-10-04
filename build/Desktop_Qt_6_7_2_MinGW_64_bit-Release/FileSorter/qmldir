@@ -7,5 +7,4 @@ CustomCheckBox 1.0 CustomCheckBox.qml
 MainHeader 1.0 MainHeader.qml
 singleton CustomFonts 1.0 CustomFonts.qml
 SortSettings 1.0 SortSettings.qml
-CustomExplorer 1.0 CustomExplorer.qml
 

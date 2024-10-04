@@ -6,13 +6,12 @@
     <file alias="MainHeader.qml">C:/Users/jayem/Downloads/FileSorter/MainHeader.qml</file>
     <file alias="CustomFonts.qml">C:/Users/jayem/Downloads/FileSorter/CustomFonts.qml</file>
     <file alias="SortSettings.qml">C:/Users/jayem/Downloads/FileSorter/SortSettings.qml</file>
-    <file alias="CustomExplorer.qml">C:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml</file>
-    <file alias="Icons/folder-open-outline.svg">C:/Users/jayem/Downloads/FileSorter/Icons/folder-open-outline.svg</file>
-    <file alias="Icons/folder-outline.svg">C:/Users/jayem/Downloads/FileSorter/Icons/folder-outline.svg</file>
-    <file alias="Icons/document-outline.svg">C:/Users/jayem/Downloads/FileSorter/Icons/document-outline.svg</file>
+    <file alias="Icons/folder-open.svg">C:/Users/jayem/Downloads/FileSorter/Icons/folder-open.svg</file>
+    <file alias="Icons/folder.svg">C:/Users/jayem/Downloads/FileSorter/Icons/folder.svg</file>
     <file alias="Icons/document.svg">C:/Users/jayem/Downloads/FileSorter/Icons/document.svg</file>
-    <file alias="Icons/doument-outline-green.svg">C:/Users/jayem/Downloads/FileSorter/Icons/doument-outline-green.svg</file>
+    <file alias="Icons/document-outline-green.svg">C:/Users/jayem/Downloads/FileSorter/Icons/document-outline-green.svg</file>
     <file alias="Fonts/Montserrat-VariableFont_wght.ttf">C:/Users/jayem/Downloads/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf</file>
+    <file alias="Images/BackgroundRadialGradient.png">C:/Users/jayem/Downloads/FileSorter/Images/BackgroundRadialGradient.png</file>
   </qresource>
 </RCC>
 

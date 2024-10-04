@@ -107,145 +107,145 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Main.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Main.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/ColorProperties.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/ColorProperties.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomCheckBox.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/CustomCheckBox.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/MainHeader.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/MainHeader.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomFonts.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/CustomFonts.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/SortSettings.qml",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/SortSettings.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open-outline.svg",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/folder-open-outline.svg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-outline.svg",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/folder-outline.svg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline.svg",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/document-outline.svg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document.svg",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/document.svg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/doument-outline-green.svg",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/doument-outline-green.svg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Main.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Main.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/ColorProperties.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/ColorProperties.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomCheckBox.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/CustomCheckBox.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/MainHeader.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/MainHeader.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomFonts.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/CustomFonts.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/SortSettings.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/SortSettings.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open-outline.svg.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/folder-open-outline.svg.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-outline.svg.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/folder-outline.svg.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline.svg.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/document-outline.svg.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document.svg.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/document.svg.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/doument-outline-green.svg.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Icons/doument-outline-green.svg.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -44,23 +44,22 @@ constexpr auto qt_meta_stringdata_CLASSFileDataHandlerENDCLASS = QtMocHelpers::s
     "fileNameListChanged",
     "placeInNewFolderChanged",
     "newFolderNameChanged",
-    "setRootDirectory",
-    "selectedFolderPath",
+    "defaultPathChanged",
     "addItems",
     "count",
     "setFileListDefault",
-    "editFile",
-    "folderDirectory",
-    "index",
-    "fileName",
-    "prefix",
-    "suffix",
-    "createNewFolder",
-    "emptyFileListModel",
     "setFilters",
-    "showDirectoryInExplorer",
+    "emptyFileListModel",
+    "createNewFolder",
+    "folderDirectory",
     "urlToLocalFile",
     "url",
+    "showDirectoryInExplorer",
+    "setRootDirectory",
+    "selectedFolderPath",
+    "editFile",
+    "index",
+    "fileName",
     "rootIndex",
     "QModelIndex",
     "files",
@@ -69,7 +68,8 @@ constexpr auto qt_meta_stringdata_CLASSFileDataHandlerENDCLASS = QtMocHelpers::s
     "extensionType",
     "fileNameList",
     "placeInNewFolder",
-    "newFolderName"
+    "newFolderName",
+    "defaultPath"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -82,34 +82,33 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFileDataHandlerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      18,   14, // methods
-       7,  174, // properties
+      17,   14, // methods
+       8,  149, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       7,       // signalCount
+       8,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  122,    2, 0x06,    8 /* Public */,
-       3,    0,  123,    2, 0x06,    9 /* Public */,
-       4,    0,  124,    2, 0x06,   10 /* Public */,
-       5,    0,  125,    2, 0x06,   11 /* Public */,
-       6,    0,  126,    2, 0x06,   12 /* Public */,
-       7,    0,  127,    2, 0x06,   13 /* Public */,
-       8,    0,  128,    2, 0x06,   14 /* Public */,
+       1,    0,  116,    2, 0x06,    9 /* Public */,
+       3,    0,  117,    2, 0x06,   10 /* Public */,
+       4,    0,  118,    2, 0x06,   11 /* Public */,
+       5,    0,  119,    2, 0x06,   12 /* Public */,
+       6,    0,  120,    2, 0x06,   13 /* Public */,
+       7,    0,  121,    2, 0x06,   14 /* Public */,
+       8,    0,  122,    2, 0x06,   15 /* Public */,
+       9,    0,  123,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       9,    1,  129,    2, 0x0a,   15 /* Public */,
-      11,    1,  132,    2, 0x0a,   17 /* Public */,
-      13,    0,  135,    2, 0x0a,   19 /* Public */,
-      14,    5,  136,    2, 0x0a,   20 /* Public */,
-      14,    4,  147,    2, 0x2a,   26 /* Public | MethodCloned */,
-      14,    3,  156,    2, 0x2a,   31 /* Public | MethodCloned */,
-      20,    1,  163,    2, 0x0a,   35 /* Public */,
-      21,    0,  166,    2, 0x0a,   37 /* Public */,
-      22,    0,  167,    2, 0x0a,   38 /* Public */,
-      23,    1,  168,    2, 0x0a,   39 /* Public */,
-      24,    1,  171,    2, 0x0a,   41 /* Public */,
+      10,    1,  124,    2, 0x0a,   17 /* Public */,
+      12,    0,  127,    2, 0x0a,   19 /* Public */,
+      13,    0,  128,    2, 0x0a,   20 /* Public */,
+      14,    0,  129,    2, 0x0a,   21 /* Public */,
+      15,    1,  130,    2, 0x0a,   22 /* Public */,
+      17,    1,  133,    2, 0x0a,   24 /* Public */,
+      19,    1,  136,    2, 0x0a,   26 /* Public */,
+      20,    1,  139,    2, 0x0a,   28 /* Public */,
+      22,    3,  142,    2, 0x0a,   30 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -119,28 +118,28 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFileDataHandlerENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QUrl,   10,
-    QMetaType::Void, QMetaType::Int,   12,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QUrl, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString,   15,   16,   17,   18,   19,
-    QMetaType::Void, QMetaType::QUrl, QMetaType::Int, QMetaType::QString, QMetaType::QString,   15,   16,   17,   18,
-    QMetaType::Void, QMetaType::QUrl, QMetaType::Int, QMetaType::QString,   15,   16,   17,
-    QMetaType::QString, QMetaType::QUrl,   15,
+    QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QUrl,   15,
-    QMetaType::QString, QMetaType::QUrl,   25,
+    QMetaType::Void,
+    QMetaType::QString, QMetaType::QUrl,   16,
+    QMetaType::QString, QMetaType::QUrl,   18,
+    QMetaType::Void, QMetaType::QUrl,   16,
+    QMetaType::Void, QMetaType::QUrl,   21,
+    QMetaType::Void, QMetaType::QUrl, QMetaType::Int, QMetaType::QString,   16,   23,   24,
 
  // properties: name, type, flags
-      26, 0x80000000 | 27, 0x0001510b, uint(0), 0,
-      28, 0x80000000 | 29, 0x0001510b, uint(1), 0,
-      30, QMetaType::QStringList, 0x00015103, uint(2), 0,
-      31, QMetaType::QString, 0x00015103, uint(3), 0,
-      32, QMetaType::QStringList, 0x00015103, uint(4), 0,
-      33, QMetaType::Bool, 0x00015903, uint(5), 0,
-      34, QMetaType::QString, 0x00015903, uint(6), 0,
+      25, 0x80000000 | 26, 0x0001510b, uint(0), 0,
+      27, 0x80000000 | 28, 0x0001510b, uint(1), 0,
+      29, QMetaType::QStringList, 0x00015103, uint(2), 0,
+      30, QMetaType::QString, 0x00015103, uint(3), 0,
+      31, QMetaType::QStringList, 0x00015103, uint(4), 0,
+      32, QMetaType::Bool, 0x00015903, uint(5), 0,
+      33, QMetaType::QString, 0x00015903, uint(6), 0,
+      34, QMetaType::QUrl, 0x00015903, uint(7), 0,
 
        0        // eod
 };
@@ -166,6 +165,8 @@ Q_CONSTINIT const QMetaObject FileDataHandler::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<bool, std::true_type>,
         // property 'newFolderName'
         QtPrivate::TypeAndForceComplete<QString, std::true_type>,
+        // property 'defaultPath'
+        QtPrivate::TypeAndForceComplete<QUrl, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<FileDataHandler, std::true_type>,
         // method 'rootIndexChanged'
@@ -182,45 +183,34 @@ Q_CONSTINIT const QMetaObject FileDataHandler::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'newFolderNameChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'setRootDirectory'
+        // method 'defaultPathChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
         // method 'addItems'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'setFileListDefault'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'editFile'
+        // method 'setFilters'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'editFile'
+        // method 'emptyFileListModel'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'editFile'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'createNewFolder'
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
-        // method 'emptyFileListModel'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'setFilters'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'urlToLocalFile'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
         // method 'showDirectoryInExplorer'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
-        // method 'urlToLocalFile'
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>
+        // method 'setRootDirectory'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QUrl, std::false_type>,
+        // method 'editFile'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
@@ -238,19 +228,18 @@ void FileDataHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 4: _t->fileNameListChanged(); break;
         case 5: _t->placeInNewFolderChanged(); break;
         case 6: _t->newFolderNameChanged(); break;
-        case 7: _t->setRootDirectory((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 7: _t->defaultPathChanged(); break;
         case 8: _t->addItems((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 9: _t->setFileListDefault(); break;
-        case 10: _t->editFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5]))); break;
-        case 11: _t->editFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4]))); break;
-        case 12: _t->editFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
-        case 13: { QString _r = _t->createNewFolder((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])));
+        case 10: _t->setFilters(); break;
+        case 11: _t->emptyFileListModel(); break;
+        case 12: { QString _r = _t->createNewFolder((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
-        case 14: _t->emptyFileListModel(); break;
-        case 15: _t->setFilters(); break;
-        case 16: _t->showDirectoryInExplorer((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
-        case 17: { QString _r = _t->urlToLocalFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])));
+        case 13: { QString _r = _t->urlToLocalFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 14: _t->showDirectoryInExplorer((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 15: _t->setRootDirectory((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 16: _t->editFile((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -304,6 +293,13 @@ void FileDataHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
                 return;
             }
         }
+        {
+            using _t = void (FileDataHandler::*)();
+            if (_t _q_method = &FileDataHandler::defaultPathChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 7;
+                return;
+            }
+        }
     } else if (_c == QMetaObject::RegisterPropertyMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
@@ -322,6 +318,7 @@ void FileDataHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 4: *reinterpret_cast< QStringList*>(_v) = _t->fileNameList(); break;
         case 5: *reinterpret_cast< bool*>(_v) = _t->placeInNewFolder(); break;
         case 6: *reinterpret_cast< QString*>(_v) = _t->newFolderName(); break;
+        case 7: *reinterpret_cast< QUrl*>(_v) = _t->defaultPath(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
@@ -336,6 +333,7 @@ void FileDataHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 4: _t->setFileNameList(*reinterpret_cast< QStringList*>(_v)); break;
         case 5: _t->setPlaceInNewFolder(*reinterpret_cast< bool*>(_v)); break;
         case 6: _t->setNewFolderName(*reinterpret_cast< QString*>(_v)); break;
+        case 7: _t->setDefaultPath(*reinterpret_cast< QUrl*>(_v)); break;
         default: break;
         }
     } else if (_c == QMetaObject::ResetProperty) {
@@ -362,18 +360,18 @@ int FileDataHandler::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 18)
+        if (_id < 17)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 18;
+        _id -= 17;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 18)
+        if (_id < 17)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 18;
+        _id -= 17;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }
@@ -418,5 +416,11 @@ void FileDataHandler::placeInNewFolderChanged()
 void FileDataHandler::newFolderNameChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 6, nullptr);
+}
+
+// SIGNAL 7
+void FileDataHandler::defaultPathChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 7, nullptr);
 }
 QT_WARNING_POP

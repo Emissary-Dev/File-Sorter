@@ -5,7 +5,7 @@ import QtQuick.Controls.Material
 
 Rectangle{
 
-    id:bottomConfigBg
+    id:settingsBg
     color: ColorProperties.baseColorDark
     Layout.fillWidth: true
     Layout.fillHeight: true
@@ -13,7 +13,6 @@ Rectangle{
     Layout.alignment: Qt.AlignBottom
     signal selectAllPressed()
     signal deselectAllPressed()
-    property int checkBoxLayoutSpacing: window.width * .05
 
     GridLayout{
         anchors.fill: parent
@@ -22,9 +21,9 @@ Rectangle{
         anchors.topMargin: 10
         anchors.bottomMargin: 10
 
-        columnSpacing: 20
         rows: 3
         columns: 5
+        columnSpacing: 20
 
         RowLayout{
             spacing: 10
@@ -32,25 +31,28 @@ Rectangle{
             Layout.column: 0
             Layout.preferredWidth:  window.width * .1
             Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
+
             Text{
                 text: "Prefix"
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
-                color: ColorProperties.textColor
+                color: prefixCheckbox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
             }
-            TextField{
 
-                id: prefixText
-                color: ColorProperties.textColor
+            TextField{
+                id: prefixTextField
+
+                clip: true
+                color: prefixCheckbox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
                 font.family: CustomFonts.montserrat
                 font.weight: Font.DemiBold
+                enabled: prefixCheckbox.checked
+
                 Layout.alignment: Qt.AlignLeft
                 Layout.maximumWidth: window.width * .1
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.height * .05
-                clip: true
-                enabled: prefixCheckbox.checked
 
                 onEditingFinished:{
                     prefix = text
@@ -68,16 +70,12 @@ Rectangle{
                         height: parent.height * .04
                         radius: 10
                     }
-
                 }
-
 
                 onHoveredChanged: {
                     if(hovered)
                         infoText = "Prefix text."
                 }
-
-
             }
 
             HoverHandler{
@@ -86,22 +84,24 @@ Rectangle{
         }
 
         RowLayout{
-
             Layout.row: 1
             Layout.column: 0
             spacing: 10
             Layout.preferredWidth:  window.width * .1
             Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
+
             Text{
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
                 text:"Suffix"
-                color: ColorProperties.textColor
+                color: suffixCheckbox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
             }
 
             TextField{
                 id: suffixText
-                color: ColorProperties.textColor
+                clip: true
+                enabled: suffixCheckbox.checked
+                color:  suffixCheckbox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
                 font.family: CustomFonts.montserrat
                 font.weight: Font.DemiBold
                 Layout.alignment: Qt.AlignLeft
@@ -109,13 +109,12 @@ Rectangle{
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.height * .05
-                clip: true
-                enabled: suffixCheckbox.checked
 
                 onEditingFinished:{
                     suffix = text
                     focus = false
                 }
+
                 background: Rectangle{
                     radius: 10
                     color: "transparent"
@@ -127,7 +126,6 @@ Rectangle{
                         height: parent.height * .04
                         radius: 10
                     }
-
                 }
 
                 onHoveredChanged: {
@@ -141,22 +139,24 @@ Rectangle{
             }
         }
         RowLayout{
-
             Layout.row: 2
             Layout.column: 0
             spacing: 10
             Layout.preferredWidth:  window.width * .1
             Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
+
             Text{
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
                 text:"Folder Name"
-                color: ColorProperties.textColor
+                color: newFolderCheckBox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
             }
 
             TextField{
-                id:  newFolderText
-                color: ColorProperties.textColor
+                id:  newFolderTextField
+                clip: true
+                enabled: newFolderCheckBox.checked
+                color: newFolderCheckBox.checked ? ColorProperties.textColor : ColorProperties.textDisabled
                 font.family: CustomFonts.montserrat
                 font.weight: Font.DemiBold
                 Layout.alignment: Qt.AlignLeft
@@ -164,25 +164,23 @@ Rectangle{
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.height * .05
-                clip: true
-                enabled: placeInNewFolderOptionCheckBox.checked
 
                 onEditingFinished:{
                     suffix = text
                     focus = false
                 }
+
                 background: Rectangle{
                     radius: 10
                     color: "transparent"
 
                     Rectangle{
                         anchors.bottom: parent.bottom
-                        color: placeInNewFolderOptionCheckBox.hovered && placeInNewFolderOptionCheckBox.checked ? Qt.lighter(ColorProperties.baseColor, 2) : Qt.lighter(ColorProperties.baseColor, 1.5)
+                        color: newFolderCheckBox.hovered && newFolderCheckBox.checked ? Qt.lighter(ColorProperties.baseColor, 2) : Qt.lighter(ColorProperties.baseColor, 1.5)
                         width: parent.width
                         height: parent.height * .04
                         radius: 10
                     }
-
                 }
 
                 onHoveredChanged: {
@@ -198,34 +196,34 @@ Rectangle{
 
 
         RowLayout{
-
             Layout.row: 0
             Layout.column: 1
             Layout.leftMargin: 10
             Layout.rightMargin: 10
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
+
             Text{
-                Layout.preferredWidth:  placeInNewFolderOptionLayoutText.width
+                Layout.preferredWidth:  newFolderLayoutText.width
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
                 text: "Enable Prefix"
                 color: ColorProperties.textColor
                 elide: Text.ElideRight
             }
+
             CustomCheckBox{
                 id:prefixCheckbox
+
                 Layout.alignment: Qt.AlignLeft
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.width * .04
-                //  Layout.maximumWidth: window.width * .05
-                Layout.preferredWidth:  placeInNewFolderOptionCheckBox.width
+                boxWidth: window.width * .02
+                boxHeight: boxWidth
+                Layout.preferredWidth:  newFolderCheckBox.width
+
                 onHoveredChanged: {
                     if(hovered)
-                    {
                         infoText = "Add specified name to the beginning of selected files."
-
-                    }
-
                 }
 
                 onClicked:{
@@ -235,7 +233,6 @@ Rectangle{
                     else
                         return Qt.Checked
                 }
-
             }
         }
 
@@ -245,9 +242,9 @@ Rectangle{
             Layout.leftMargin: 10
             Layout.rightMargin: 10
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-            Text{
-                Layout.preferredWidth:  placeInNewFolderOptionLayoutText.width
 
+            Text{
+                Layout.preferredWidth:  newFolderLayoutText.width
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
                 text:"Enable Suffix"
@@ -256,21 +253,20 @@ Rectangle{
             }
 
             CustomCheckBox{
-
                 id:suffixCheckbox
+
                 Layout.alignment: Qt.AlignLeft
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.width * .04
-                // Layout.maximumWidth: window.width * .05
-                Layout.preferredWidth:  placeInNewFolderOptionCheckBox.width
+                Layout.preferredWidth:  newFolderCheckBox.width
+                boxWidth: window.width * .02
+                boxHeight: boxWidth
+
                 onHoveredChanged: {
                     if(hovered)
-                    {
                         infoText = "Add specified name to the end of selected files."
-
-                    }
-
                 }
+
                 onClicked:{
                     forceActiveFocus()
                     if(checkState === Qt.Checked)
@@ -278,37 +274,36 @@ Rectangle{
                     else
                         return Qt.Checked
                 }
-
             }
         }
 
         RowLayout{
-            id: placeInNewFolderOptionLayout
+            id: newFolderLayout
             Layout.row: 2
             Layout.column: 1
             Layout.leftMargin: 10
             Layout.rightMargin: 10
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
+
             Text{
-                id: placeInNewFolderOptionLayoutText
+                id: newFolderLayoutText
                 Layout.preferredWidth:  window.width * .1
                 elide: Text.ElideRight
                 font.family: CustomFonts.montserrat
                 font.weight: Font.Bold
                 text:"New folder"
                 color: ColorProperties.textColor
-
-
             }
 
             CustomCheckBox{
+                id:newFolderCheckBox
 
-                id:placeInNewFolderOptionCheckBox
                 Layout.alignment: Qt.AlignLeft
                 Layout.fillHeight: true
                 Layout.maximumHeight: window.width * .04
-                //Layout.maximumWidth: window.width * .05
                 Layout.preferredWidth:  window.width * .05
+                boxWidth: window.width * .02
+                boxHeight: boxWidth
 
                 onHoveredChanged: {
                     if(hovered)
@@ -316,8 +311,8 @@ Rectangle{
                         infoText = "Place selected files in a new folder on save."
 
                     }
-
                 }
+
                 onClicked:{
                     forceActiveFocus()
                     if(checkState === Qt.Checked)
@@ -325,14 +320,13 @@ Rectangle{
                     else
                         return Qt.Checked
                 }
-
             }
         }
 
         Rectangle{
 
             id:infoBox
-            color: "#3E4563"
+            color: ColorProperties.baseColorMidBright
             radius: 10
             Layout.row: 0
             Layout.rowSpan: 3
@@ -343,9 +337,6 @@ Rectangle{
             Layout.maximumHeight: window.height * .3
             Layout.maximumWidth:  window.width * .6
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
-            // border.width: Math.max(width * .01, .06)
-            // border.color: ColorProperties.brandColor
-
 
             Text{
                 id:info
@@ -359,8 +350,6 @@ Rectangle{
                 wrapMode: Text.Wrap
                 width: infoBox.width
                 clip: true
-
-
             }
         }
         ColumnLayout{
@@ -369,9 +358,6 @@ Rectangle{
             Layout.rowSpan: 3
 
             Button{
-
-
-
                 id: selectAllbtn
                 Layout.alignment: Qt.AlignHCenter
                 Layout.maximumWidth: window.width * .1
@@ -384,11 +370,9 @@ Rectangle{
                     color: ColorProperties.textColor
                     font.pixelSize: Math.round(selectAllbtn.height/3)
                     text: "Select All"
-
                     font.family: CustomFonts.montserrat
                     font.weight: Font.DemiBold
                 }
-
 
                 background: Rectangle{
                     id: selectAllButtonBg
@@ -397,6 +381,7 @@ Rectangle{
                     border.width: Math.max(width * .01, .08)
                     radius: 30
                 }
+
                 onHoveredChanged: {
                     if(hovered)
                     {
@@ -409,21 +394,18 @@ Rectangle{
                         selectAllButtonBg.border.color = ColorProperties.brandColor
                     }
                 }
+
                 onClicked:{
                     forceActiveFocus()
-                    bottomConfigBg.selectAllPressed()
-
-
+                    settingsBg.selectAllPressed()
                 }
 
             }
 
 
             Button{
-
-
-
                 id: deselectAllBtn
+
                 Layout.alignment: Qt.AlignHCenter
                 Layout.maximumWidth: window.width * .1
                 Layout.preferredWidth:  window.width * .1
@@ -435,11 +417,9 @@ Rectangle{
                     color: ColorProperties.textColor
                     font.pixelSize: Math.round(deselectAllBtn.height/3)
                     text: "Deselect All"
-
                     font.family: CustomFonts.montserrat
                     font.weight: Font.DemiBold
                 }
-
 
                 background: Rectangle{
                     id: deselectAllButtonBg
@@ -453,21 +433,18 @@ Rectangle{
                     {
                         infoText = "Deselect all files"
                         deselectAllButtonBg.border.color = ColorProperties.brandColorBright
-
                     }
                     else
                     {
                         deselectAllButtonBg.border.color = ColorProperties.brandColor
                     }
                 }
+
                 onClicked:{
                     forceActiveFocus()
-                    bottomConfigBg.deselectAllPressed()
-
-
+                    settingsBg.deselectAllPressed()
                 }
             }
-
         }
 
         ColumnLayout{
@@ -475,11 +452,8 @@ Rectangle{
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
             Layout.rowSpan: 3
 
-
-
-
             Button{
-                id: btn2
+                id: saveBtn
 
                 background: Rectangle{
                     id:saveButtonBg
@@ -499,7 +473,7 @@ Rectangle{
                 Text{
                     anchors.centerIn: parent
                     color: ColorProperties.textColor
-                    font.pixelSize: Math.round(btn2.height/3)
+                    font.pixelSize: Math.round(saveBtn.height/3)
                     text: "Save"
                     font.family: CustomFonts.montserrat
                     font.weight: Font.DemiBold
@@ -510,7 +484,6 @@ Rectangle{
                     {
                         infoText = "Save and rename the corresponding files in File Explorer."
                         saveButtonBg.border.color = ColorProperties.brandColorBright
-
                     }
                     else
                     {
@@ -545,9 +518,9 @@ Rectangle{
             if (FileDataHandler.fileList.length !== 0 && editedFileNameList.length !== 0 && !allUnchecked){
 
                 //Create new folder
-                if(placeInNewFolderOptionCheckBox.checked && newFolderText.text !== ""){
+                if(newFolderCheckBox.checked && newFolderTextField.text !== ""){
                     FileDataHandler.placeInNewFolder = true
-                    FileDataHandler.newFolderName = newFolderText.text
+                    FileDataHandler.newFolderName = newFolderTextField.text
                 }
 
                 for(var i = 0; i < editedFileNameList.length; i++){
@@ -562,14 +535,18 @@ Rectangle{
 
                         //Check which one of the 3 conditions are true (if none are true, we'll use the foundational parameters
                         if (prefixCheckbox.checked && !suffixCheckbox.checked){
-                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i], prefix)
+                            editedFileNameList[i] = prefix +  editedFileNameList[i]
+                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i])
                         }
                         else if (suffixCheckbox.checked && !prefixCheckbox.checked){
-                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i], "", suffix)
+                            editedFileNameList[i] =  editedFileNameList[i] + suffix
+                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i])
                         }
                         else if (prefixCheckbox.checked && suffixCheckbox.checked)
                         {
-                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i], prefix, suffix)
+                            editedFileNameList[i] = prefix +  editedFileNameList[i]
+                            editedFileNameList[i] =  editedFileNameList[i] + suffix
+                            FileDataHandler.editFile(currentFolderPath, i, editedFileNameList[i])
                         }
                         else {
                             //Foundational parameters
@@ -584,15 +561,15 @@ Rectangle{
                 refreshAll();
             }
             else{
-                console.log("Save attempt failed!", FileDataHandler.fileList.length, editedFileNameList.length,  !allUnchecked)
+                infoText = "Save attempt failed."
             }
         }
     }
 
     function refreshAll(){
         FileDataHandler.placeInNewFolder = false
-        newFolderText.text = ""
-        prefixText.text = ""
+        newFolderTextField.text = ""
+        prefixTextField.text = ""
         suffixText.text = ""
         prefix = ""
         suffix = ""

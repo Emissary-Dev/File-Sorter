@@ -5,20 +5,17 @@
 #include <QFileSystemModel>
 #include <QDesktopServices>
 
-
-
 FileDataHandler::FileDataHandler(QObject * parent) : QFileSystemModel(parent) {
     
     //qurls return an empty string when converted into a local file without file:///
     //QStandardPaths doesn't return a string in that format, so we handle this manually
-    defaultPath = "file:///" + (QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
+    m_defaultPath = "file:///" + (QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
     m_fileList.clear();
     setFilters();
-    setRootDirectory(defaultPath);
+    setRootDirectory(m_defaultPath);
 }
 
-
-void FileDataHandler::setRootDirectory( QUrl selectedFolderPath)
+void FileDataHandler::setRootDirectory(const QUrl selectedFolderPath)
 {
     
     //convert url into a qstring that's compatible with setRootPath()
@@ -26,36 +23,27 @@ void FileDataHandler::setRootDirectory( QUrl selectedFolderPath)
     if (QDir(selectedPath).exists()){
         setRootPath(selectedPath);
         setRootIndex(index(selectedPath));
+
         if(m_files){
+
             m_files->setStringList(QDir(selectedPath).entryList(filters, QDir::Files));
             setFiles(m_files);
             setFileList(m_files->stringList());
+
             for (int i = 0; i < m_fileList.length(); i++) {
                 int dotIndex = m_fileList[i].lastIndexOf(".");
                 m_fileNameList << m_fileList[i].left(dotIndex);
             }
         }
-        else
-        {
-            qWarning() << "m_files is invalid";
-        }
-        
-        qInfo() << rootPath()<< selectedPath;
+
         return;
     }
-    else{
-        qWarning() << "Cannot set a default path.";
-        
-    }
-    
 }
 
 void FileDataHandler::addItems(int count)
 {
     QStringList fileList;
     fileList.fill("", m_files->stringList().size());
-    
-    
 }
 
 void FileDataHandler::setFileListDefault()
@@ -94,87 +82,36 @@ void FileDataHandler::setFiles(QStringListModel *newFiles)
     m_files = newFiles;
     emit filesChanged();
 }
-void FileDataHandler::editFile(QUrl folderDirectory, int index, QString fileName, QString prefix, QString suffix){
+void FileDataHandler::editFile(QUrl folderDirectory, int index, QString fileName){
     
     QString newFilePath;
     QDir dir(folderDirectory.toLocalFile()); //removes the file:/// part of the url so that the path is now valid
     QFile currentFile(dir.absoluteFilePath(m_fileList[index])); //creating the reference (absolutePath returns a folder directory)
-    
-    //This should always come before currentFilePath
-    if(!prefix.isEmpty()){
-        fileName.prepend(prefix);
-        qInfo() << "LOL";
-    }
-    if(!suffix.isEmpty()){
-        fileName.append(suffix);
-        qInfo() << "LOL";
-    }
-
-        qInfo() << "LOL" << prefix;
-    qInfo() << "LOL" << suffix;
-
     QString currentFilePath = dir.absolutePath() + "/" + fileName + m_extensionType;
-
-
 
     if(m_files && m_fileList.size() > 0)
     {
-
         //Rename file
         if(currentFile.rename(currentFilePath))
         {
-            qInfo() << currentFile.fileName();
-
-
             //Attempt to place in folder
             if(m_placeInNewFolder && m_newFolderName != "")
-            {
                 newFilePath = dir.absolutePath() + "/" + createNewFolder(folderDirectory) + "/" + fileName + m_extensionType;
-                if(currentFile.rename(currentFilePath, newFilePath))
-                {
-                   qWarning() << currentFilePath << "FOLDERNAME IS FULL" << newFilePath;
-                }
-                else{
-                    qWarning() << currentFilePath << "FAFOLDERIL";
-                }
-            }
-            else{
-                qWarning() << currentFilePath << "FOLDERNAME IS EMPTY" << newFilePath;
-                qWarning() << currentFilePath << "FOLDERNAME IS EMPTY";
-            }
         }
-        else{
-            //qWarning() << currentFilePath << "FAIL";
-        }
-
     }
-    else
-    {
-       // qWarning() << "path does not exist or string list size is 0";
-    }
-
 }
-
-
-
-
 
 QString FileDataHandler::createNewFolder(QUrl folderDirectory)
 {
     QDir dir;
     QString directory = folderDirectory.toLocalFile() + "/" + m_newFolderName;
-    qInfo() << "FoLDER THING";
-    qInfo() << m_newFolderName;
-    qInfo() << folderDirectory.toLocalFile();
 
     if(!dir.exists(directory)){
         if(dir.mkdir(directory)){
-            qInfo() << "JK MADE IR";
             m_placeInNewFolder = true;
             return m_newFolderName;
         }
         else{
-            qInfo() << "DIDNT MAKE IT";
             m_placeInNewFolder = false;
             return "New folder";
         }
@@ -184,7 +121,6 @@ QString FileDataHandler::createNewFolder(QUrl folderDirectory)
         m_placeInNewFolder = true;
         return m_newFolderName;
     }
-
 }
 
 void FileDataHandler::emptyFileListModel()
@@ -279,4 +215,17 @@ void FileDataHandler::setNewFolderName(const QString &newNewFolderName)
         return;
     m_newFolderName = newNewFolderName;
     emit newFolderNameChanged();
+}
+
+QUrl FileDataHandler::defaultPath() const
+{
+    return m_defaultPath;
+}
+
+void FileDataHandler::setDefaultPath(const QUrl &newDefaultPath)
+{
+    if (m_defaultPath == newDefaultPath)
+        return;
+    m_defaultPath = newDefaultPath;
+    emit defaultPathChanged();
 }

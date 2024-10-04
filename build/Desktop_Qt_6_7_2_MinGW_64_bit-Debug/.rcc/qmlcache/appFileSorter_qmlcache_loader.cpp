@@ -47,13 +47,6 @@ namespace _qt_qml_FileSorter_SortSettings_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_FileSorter_CustomExplorer_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
 
 }
 namespace {
@@ -74,7 +67,6 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/FileSorter/MainHeader.qml"), &QmlCacheGeneratedCode::_qt_qml_FileSorter_MainHeader_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/FileSorter/CustomFonts.qml"), &QmlCacheGeneratedCode::_qt_qml_FileSorter_CustomFonts_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/FileSorter/SortSettings.qml"), &QmlCacheGeneratedCode::_qt_qml_FileSorter_SortSettings_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/FileSorter/CustomExplorer.qml"), &QmlCacheGeneratedCode::_qt_qml_FileSorter_CustomExplorer_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

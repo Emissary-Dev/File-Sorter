@@ -35,20 +35,21 @@ qt_add_qml_module(appFileSorter
 
 
     RESOURCES
-    "Icons/folder-open-outline.svg"
-    "Icons/folder-outline.svg"
-    "Icons/document-outline.svg"
+    "Icons/folder-open.svg"
+    "Icons/folder.svg"
     "Icons/document.svg"
-    "Icons/doument-outline-green.svg"
-
+    "Icons/document-outline-green.svg"
     "Fonts/Montserrat-VariableFont_wght.ttf"
+    "Images/BackgroundRadialGradient.png"
+
+
     SOURCES filedatahandler.h filedatahandler.cpp
     QML_FILES CustomCheckBox.qml
     QML_FILES MainHeader.qml
     QML_FILES CustomFonts.qml
     QML_FILES SortSettings.qml
     SOURCES
-    QML_FILES CustomExplorer.qml
+    QML_FILES
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

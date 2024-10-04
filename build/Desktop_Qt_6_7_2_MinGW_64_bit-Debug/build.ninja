@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_
 #############################################
 # Order-only phony target for appFileSorter
 
-build cmake_object_order_depends_target_appFileSorter: phony || .qt/rcc/qrc_appFileSorter_raw_qml_0.cpp .qt/rcc/qrc_qmake_FileSorter.cpp .rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp .rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp .rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp .rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp .rcc/qmlcache/appFileSorter_MainHeader_qml.cpp .rcc/qmlcache/appFileSorter_Main_qml.cpp .rcc/qmlcache/appFileSorter_SortSettings_qml.cpp .rcc/qmlcache/appFileSorter_qmlcache_loader.cpp FileSorter/appFileSorter.qmltypes appFileSorter_autogen appFileSorter_autogen/mocs_compilation.cpp appFileSorter_autogen/timestamp appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling appfilesorter_qmltyperegistrations.cpp meta_types/appFileSorter_json_file_list.txt meta_types/appFileSorter_json_file_list.txt.timestamp meta_types/qt6appfilesorter_debug_metatypes.json meta_types/qt6appfilesorter_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appFileSorter: phony || .qt/rcc/qrc_appFileSorter_raw_qml_0.cpp .qt/rcc/qrc_qmake_FileSorter.cpp .rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp .rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp .rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp .rcc/qmlcache/appFileSorter_MainHeader_qml.cpp .rcc/qmlcache/appFileSorter_Main_qml.cpp .rcc/qmlcache/appFileSorter_SortSettings_qml.cpp .rcc/qmlcache/appFileSorter_qmlcache_loader.cpp FileSorter/appFileSorter.qmltypes appFileSorter_autogen appFileSorter_autogen/mocs_compilation.cpp appFileSorter_autogen/timestamp appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling appfilesorter_qmltyperegistrations.cpp meta_types/appFileSorter_json_file_list.txt meta_types/appFileSorter_json_file_list.txt.timestamp meta_types/qt6appfilesorter_debug_metatypes.json meta_types/qt6appfilesorter_debug_metatypes.json.gen
 
 build CMakeFiles/appFileSorter.dir/appFileSorter_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appFileSorter_unscanned_Debug C$:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appFileSorter
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -145,14 +145,6 @@ build CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rc
   OBJECT_DIR = CMakeFiles\appFileSorter.dir
   OBJECT_FILE_DIR = CMakeFiles\appFileSorter.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache
 
-build CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp.obj: CXX_COMPILER__appFileSorter_unscanned_Debug C$:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp || cmake_object_order_depends_target_appFileSorter
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appFileSorter.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache\appFileSorter_CustomExplorer_qml.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/include -IC:/Users/jayem/Downloads/FileSorter -isystem C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml -isystem C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2/QtCore -isystem C:/Qt/6.7.2/mingw_64/include/QtCore -isystem C:/Qt/6.7.2/mingw_64/include -isystem C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2/QtQmlBuiltins -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins -isystem C:/Qt/6.7.2/mingw_64/include/QtQml -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.7.2/mingw_64/include/QtNetwork -isystem C:/Qt/6.7.2/mingw_64/include/QtQuick -isystem C:/Qt/6.7.2/mingw_64/include/QtGui -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlModels -isystem C:/Qt/6.7.2/mingw_64/include/QtOpenGL -isystem C:/Qt/6.7.2/mingw_64/include/QtWidgets
-  OBJECT_DIR = CMakeFiles\appFileSorter.dir
-  OBJECT_FILE_DIR = CMakeFiles\appFileSorter.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache
-
 build CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp.obj: CXX_COMPILER__appFileSorter_unscanned_Debug C$:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp || cmake_object_order_depends_target_appFileSorter
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appFileSorter.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\rcc\qrc_appFileSorter_raw_qml_0.cpp.obj.d
@@ -169,7 +161,7 @@ build CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt
 #############################################
 # Link the executable appFileSorter.exe
 
-build appFileSorter.exe: CXX_EXECUTABLE_LINKER__appFileSorter_Debug CMakeFiles/appFileSorter.dir/appFileSorter_autogen/mocs_compilation.cpp.obj CMakeFiles/appFileSorter.dir/main.cpp.obj CMakeFiles/appFileSorter.dir/appfilesorter_qmltyperegistrations.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_FileSorter.cpp.obj CMakeFiles/appFileSorter.dir/filedatahandler.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_Main_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || appFileSorter_autogen appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling
+build appFileSorter.exe: CXX_EXECUTABLE_LINKER__appFileSorter_Debug CMakeFiles/appFileSorter.dir/appFileSorter_autogen/mocs_compilation.cpp.obj CMakeFiles/appFileSorter.dir/main.cpp.obj CMakeFiles/appFileSorter.dir/appfilesorter_qmltyperegistrations.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_FileSorter.cpp.obj CMakeFiles/appFileSorter.dir/filedatahandler.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_Main_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp.obj CMakeFiles/appFileSorter.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || appFileSorter_autogen appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -232,7 +224,7 @@ build all_qmllint_module: phony appFileSorter_qmllint_module
 #############################################
 # Utility command for appFileSorter_tooling
 
-build appFileSorter_tooling: phony FileSorter/Main.qml FileSorter/ColorProperties.qml FileSorter/CustomCheckBox.qml FileSorter/MainHeader.qml FileSorter/CustomFonts.qml FileSorter/SortSettings.qml FileSorter/CustomExplorer.qml FileSorter/Icons/folder-open-outline.svg FileSorter/Icons/folder-outline.svg FileSorter/Icons/document-outline.svg FileSorter/Icons/document.svg FileSorter/Icons/doument-outline-green.svg FileSorter/Fonts/Montserrat-VariableFont_wght.ttf
+build appFileSorter_tooling: phony FileSorter/Main.qml FileSorter/ColorProperties.qml FileSorter/CustomCheckBox.qml FileSorter/MainHeader.qml FileSorter/CustomFonts.qml FileSorter/SortSettings.qml FileSorter/Icons/folder-open.svg FileSorter/Icons/folder.svg FileSorter/Icons/document.svg FileSorter/Icons/document-outline-green.svg FileSorter/Fonts/Montserrat-VariableFont_wght.ttf FileSorter/Images/BackgroundRadialGradient.png
 
 
 #############################################
@@ -410,18 +402,9 @@ build .rcc/qmlcache/appFileSorter_SortSettings_qml.cpp | ${cmake_ninja_workdir}.
 
 
 #############################################
-# Custom command for .rcc\qmlcache\appFileSorter_CustomExplorer_qml.cpp
-
-build .rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlcachegen.exe C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml .qt/rcc/qmake_FileSorter.qrc .qt/rcc/appFileSorter_raw_qml_0.qrc FileSorter/appFileSorter.qmltypes FileSorter/qmldir || appFileSorter_autogen appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache && C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /qt/qml/FileSorter/CustomExplorer.qml -I C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug -I C:/Qt/6.7.2/mingw_64/./qml -i C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/qmldir --resource C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_FileSorter.qrc --resource C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appFileSorter_raw_qml_0.qrc -o C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp C:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml"
-  DESC = Generating .rcc/qmlcache/appFileSorter_CustomExplorer_qml.cpp
-  restat = 1
-
-
-#############################################
 # Custom command for .qt\rcc\qrc_appFileSorter_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appFileSorter_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml C$:/Users/jayem/Downloads/FileSorter/Icons/folder-open-outline.svg C$:/Users/jayem/Downloads/FileSorter/Icons/folder-outline.svg C$:/Users/jayem/Downloads/FileSorter/Icons/document-outline.svg C$:/Users/jayem/Downloads/FileSorter/Icons/document.svg C$:/Users/jayem/Downloads/FileSorter/Icons/doument-outline-green.svg C$:/Users/jayem/Downloads/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf .qt/rcc/appFileSorter_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appFileSorter_autogen appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling
+build .qt/rcc/qrc_appFileSorter_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/Icons/folder-open.svg C$:/Users/jayem/Downloads/FileSorter/Icons/folder.svg C$:/Users/jayem/Downloads/FileSorter/Icons/document.svg C$:/Users/jayem/Downloads/FileSorter/Icons/document-outline-green.svg C$:/Users/jayem/Downloads/FileSorter/Fonts/Montserrat-VariableFont_wght.ttf C$:/Users/jayem/Downloads/FileSorter/Images/BackgroundRadialGradient.png .qt/rcc/appFileSorter_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appFileSorter_autogen appFileSorter_autogen_timestamp_deps appFileSorter_qmlimportscan appFileSorter_tooling
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug && C:\Qt\6.7.2\mingw_64\.\bin\rcc.exe --output C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp --name appFileSorter_raw_qml_0 C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appFileSorter_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appFileSorter_raw_qml_0
   restat = 1
@@ -456,21 +439,21 @@ build CMakeFiles/appFileSorter_qmltyperegistration | ${cmake_ninja_workdir}CMake
 #############################################
 # Custom command for CMakeFiles\appFileSorter_qmllint
 
-build CMakeFiles/appFileSorter_qmllint | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml .rcc/qmllint/appFileSorter.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
+build CMakeFiles/appFileSorter_qmllint | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml .rcc/qmllint/appFileSorter.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appFileSorter.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appFileSorter_qmllint_json
 
-build CMakeFiles/appFileSorter_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml .rcc/qmllint/appFileSorter_json.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
+build CMakeFiles/appFileSorter_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml .rcc/qmllint/appFileSorter_json.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appFileSorter_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appFileSorter_qmllint_module
 
-build CMakeFiles/appFileSorter_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml .rcc/qmllint/appFileSorter_module.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
+build CMakeFiles/appFileSorter_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml .rcc/qmllint/appFileSorter_module.rsp || all_qmltyperegistrations appFileSorter_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appFileSorter_module.rsp"
 
 
@@ -529,38 +512,20 @@ build FileSorter/SortSettings.qml | ${cmake_ninja_workdir}FileSorter/SortSetting
 
 
 #############################################
-# Custom command for FileSorter\CustomExplorer.qml
+# Custom command for FileSorter\Icons\folder-open.svg
 
-build FileSorter/CustomExplorer.qml | ${cmake_ninja_workdir}FileSorter/CustomExplorer.qml: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomExplorer.qml"
-  DESC = Copying CustomExplorer.qml to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/CustomExplorer.qml
+build FileSorter/Icons/folder-open.svg | ${cmake_ninja_workdir}FileSorter/Icons/folder-open.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/folder-open.svg
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/folder-open.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open.svg"
+  DESC = Copying Icons/folder-open.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open.svg
   restat = 1
 
 
 #############################################
-# Custom command for FileSorter\Icons\folder-open-outline.svg
+# Custom command for FileSorter\Icons\folder.svg
 
-build FileSorter/Icons/folder-open-outline.svg | ${cmake_ninja_workdir}FileSorter/Icons/folder-open-outline.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/folder-open-outline.svg
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/folder-open-outline.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open-outline.svg"
-  DESC = Copying Icons/folder-open-outline.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-open-outline.svg
-  restat = 1
-
-
-#############################################
-# Custom command for FileSorter\Icons\folder-outline.svg
-
-build FileSorter/Icons/folder-outline.svg | ${cmake_ninja_workdir}FileSorter/Icons/folder-outline.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/folder-outline.svg
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/folder-outline.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-outline.svg"
-  DESC = Copying Icons/folder-outline.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder-outline.svg
-  restat = 1
-
-
-#############################################
-# Custom command for FileSorter\Icons\document-outline.svg
-
-build FileSorter/Icons/document-outline.svg | ${cmake_ninja_workdir}FileSorter/Icons/document-outline.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/document-outline.svg
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/document-outline.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline.svg"
-  DESC = Copying Icons/document-outline.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline.svg
+build FileSorter/Icons/folder.svg | ${cmake_ninja_workdir}FileSorter/Icons/folder.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/folder.svg
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/folder.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder.svg"
+  DESC = Copying Icons/folder.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/folder.svg
   restat = 1
 
 
@@ -574,11 +539,11 @@ build FileSorter/Icons/document.svg | ${cmake_ninja_workdir}FileSorter/Icons/doc
 
 
 #############################################
-# Custom command for FileSorter\Icons\doument-outline-green.svg
+# Custom command for FileSorter\Icons\document-outline-green.svg
 
-build FileSorter/Icons/doument-outline-green.svg | ${cmake_ninja_workdir}FileSorter/Icons/doument-outline-green.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/doument-outline-green.svg
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/doument-outline-green.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/doument-outline-green.svg"
-  DESC = Copying Icons/doument-outline-green.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/doument-outline-green.svg
+build FileSorter/Icons/document-outline-green.svg | ${cmake_ninja_workdir}FileSorter/Icons/document-outline-green.svg: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Icons/document-outline-green.svg
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Icons/document-outline-green.svg C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline-green.svg"
+  DESC = Copying Icons/document-outline-green.svg to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Icons/document-outline-green.svg
   restat = 1
 
 
@@ -592,6 +557,15 @@ build FileSorter/Fonts/Montserrat-VariableFont_wght.ttf | ${cmake_ninja_workdir}
 
 
 #############################################
+# Custom command for FileSorter\Images\BackgroundRadialGradient.png
+
+build FileSorter/Images/BackgroundRadialGradient.png | ${cmake_ninja_workdir}FileSorter/Images/BackgroundRadialGradient.png: CUSTOM_COMMAND C$:/Users/jayem/Downloads/FileSorter/Images/BackgroundRadialGradient.png
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/jayem/Downloads/FileSorter/Images/BackgroundRadialGradient.png C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Images/BackgroundRadialGradient.png"
+  DESC = Copying Images/BackgroundRadialGradient.png to C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/Images/BackgroundRadialGradient.png
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles\appFileSorter_qmlimportscan
 
 build CMakeFiles/appFileSorter_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appFileSorter_qmlimportscan: phony .qt/qml_imports/appFileSorter_build.cmake
@@ -600,7 +574,7 @@ build CMakeFiles/appFileSorter_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/
 #############################################
 # Custom command for .qt\qml_imports\appFileSorter_build.cmake
 
-build .qt/qml_imports/appFileSorter_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appFileSorter_build.cmake: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_FileSorter.qrc .qt/rcc/appFileSorter_raw_qml_0.qrc C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml C$:/Users/jayem/Downloads/FileSorter/CustomExplorer.qml
+build .qt/qml_imports/appFileSorter_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appFileSorter_build.cmake: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_FileSorter.qrc .qt/rcc/appFileSorter_raw_qml_0.qrc C$:/Users/jayem/Downloads/FileSorter/Main.qml C$:/Users/jayem/Downloads/FileSorter/ColorProperties.qml C$:/Users/jayem/Downloads/FileSorter/CustomCheckBox.qml C$:/Users/jayem/Downloads/FileSorter/MainHeader.qml C$:/Users/jayem/Downloads/FileSorter/CustomFonts.qml C$:/Users/jayem/Downloads/FileSorter/SortSettings.qml
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jayem\Downloads\FileSorter && C:\Users\jayem\Downloads\FileSorter\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/./bin/qmlimportscanner.exe @C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/appFileSorter_build.rsp"
   DESC = Running qmlimportscanner for appFileSorter
   restat = 1

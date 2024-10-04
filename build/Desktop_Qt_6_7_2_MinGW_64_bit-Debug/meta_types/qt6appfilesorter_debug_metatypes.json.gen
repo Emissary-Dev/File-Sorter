@@ -109,6 +109,21 @@
                         "type": "QString",
                         "user": false,
                         "write": "setNewFolderName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 7,
+                        "name": "defaultPath",
+                        "notify": "defaultPathChanged",
+                        "read": "defaultPath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false,
+                        "write": "setDefaultPath"
                     }
                 ],
                 "qualifiedClassName": "FileDataHandler",
@@ -147,20 +162,14 @@
                         "access": "public",
                         "name": "newFolderNameChanged",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "defaultPathChanged",
+                        "returnType": "void"
                     }
                 ],
                 "slots": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "selectedFolderPath",
-                                "type": "QUrl"
-                            }
-                        ],
-                        "name": "setRootDirectory",
-                        "returnType": "void"
-                    },
                     {
                         "access": "public",
                         "arguments": [
@@ -179,73 +188,12 @@
                     },
                     {
                         "access": "public",
-                        "arguments": [
-                            {
-                                "name": "folderDirectory",
-                                "type": "QUrl"
-                            },
-                            {
-                                "name": "index",
-                                "type": "int"
-                            },
-                            {
-                                "name": "fileName",
-                                "type": "QString"
-                            },
-                            {
-                                "name": "prefix",
-                                "type": "QString"
-                            },
-                            {
-                                "name": "suffix",
-                                "type": "QString"
-                            }
-                        ],
-                        "name": "editFile",
+                        "name": "setFilters",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "arguments": [
-                            {
-                                "name": "folderDirectory",
-                                "type": "QUrl"
-                            },
-                            {
-                                "name": "index",
-                                "type": "int"
-                            },
-                            {
-                                "name": "fileName",
-                                "type": "QString"
-                            },
-                            {
-                                "name": "prefix",
-                                "type": "QString"
-                            }
-                        ],
-                        "isCloned": true,
-                        "name": "editFile",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "folderDirectory",
-                                "type": "QUrl"
-                            },
-                            {
-                                "name": "index",
-                                "type": "int"
-                            },
-                            {
-                                "name": "fileName",
-                                "type": "QString"
-                            }
-                        ],
-                        "isCloned": true,
-                        "name": "editFile",
+                        "name": "emptyFileListModel",
                         "returnType": "void"
                     },
                     {
@@ -261,13 +209,14 @@
                     },
                     {
                         "access": "public",
-                        "name": "emptyFileListModel",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "name": "setFilters",
-                        "returnType": "void"
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "name": "urlToLocalFile",
+                        "returnType": "QString"
                     },
                     {
                         "access": "public",
@@ -284,12 +233,31 @@
                         "access": "public",
                         "arguments": [
                             {
-                                "name": "url",
+                                "name": "selectedFolderPath",
                                 "type": "QUrl"
                             }
                         ],
-                        "name": "urlToLocalFile",
-                        "returnType": "QString"
+                        "name": "setRootDirectory",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "folderDirectory",
+                                "type": "QUrl"
+                            },
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "editFile",
+                        "returnType": "void"
                     }
                 ],
                 "superClasses": [

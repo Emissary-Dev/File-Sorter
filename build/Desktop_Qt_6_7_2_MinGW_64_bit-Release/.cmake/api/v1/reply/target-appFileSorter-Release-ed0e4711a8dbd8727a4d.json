@@ -27,12 +27,12 @@
 			"find_dependency",
 			"_qt_internal_find_qt_dependencies",
 			"add_dependencies",
-			"qt6_target_qml_sources",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
 			"_qt_internal_finalize_executable",
 			"qt6_finalize_target",
+			"qt6_target_qml_sources",
 			"target_include_directories",
 			"_qt_internal_qml_type_registration",
 			"target_sources",
@@ -106,13 +106,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 69,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 64,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
@@ -458,7 +458,48 @@
 				"parent" : 69
 			},
 			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 18,
+				"file" : 26,
+				"line" : 1,
+				"parent" : 71
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 72
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 678,
+				"parent" : 73
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 678,
+				"parent" : 74
+			},
+			{
 				"command" : 14,
+				"file" : 5,
+				"line" : 3545,
+				"parent" : 75
+			},
+			{
+				"command" : 13,
+				"file" : 5,
+				"line" : 3350,
+				"parent" : 76
+			},
+			{
+				"command" : 19,
 				"file" : 5,
 				"line" : 647,
 				"parent" : 15
@@ -467,47 +508,6 @@
 				"command" : 13,
 				"file" : 5,
 				"line" : 2751,
-				"parent" : 71
-			},
-			{
-				"file" : 1,
-				"line" : -1,
-				"parent" : 0
-			},
-			{
-				"command" : 19,
-				"file" : 26,
-				"line" : 1,
-				"parent" : 73
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 774,
-				"parent" : 74
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 678,
-				"parent" : 75
-			},
-			{
-				"command" : 16,
-				"file" : 0,
-				"line" : 678,
-				"parent" : 76
-			},
-			{
-				"command" : 15,
-				"file" : 5,
-				"line" : 3545,
-				"parent" : 77
-			},
-			{
-				"command" : 13,
-				"file" : 5,
-				"line" : 3350,
 				"parent" : 78
 			},
 			{
@@ -586,13 +586,13 @@
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 28,
 				"file" : 5,
 				"line" : 2639,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
@@ -604,73 +604,73 @@
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2535,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 22,
 				"file" : 5,
 				"line" : 2687,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 27,
 				"file" : 5,
 				"line" : 2770,
-				"parent" : 71
+				"parent" : 78
 			},
 			{
 				"command" : 26,
@@ -694,7 +694,7 @@
 				"command" : 29,
 				"file" : 0,
 				"line" : 768,
-				"parent" : 74
+				"parent" : 72
 			},
 			{
 				"command" : 22,
@@ -710,7 +710,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -734,6 +734,10 @@
 				{
 					"backtrace" : 16,
 					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 49,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 6,
@@ -792,7 +796,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/include"
+					"path" : "C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appFileSorter_autogen/include"
 				},
 				{
 					"backtrace" : 81,
@@ -910,7 +914,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 86,
@@ -938,6 +942,10 @@
 				{
 					"backtrace" : 16,
 					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 49,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 6,
@@ -996,7 +1004,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/include"
+					"path" : "C:/Users/jayem/Downloads/FileSorter/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appFileSorter_autogen/include"
 				},
 				{
 					"backtrace" : 81,
@@ -1103,19 +1111,19 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 72,
-			"id" : "appFileSorter_tooling::@6890427a1f51a3e7e1df"
+			"backtrace" : 77,
+			"id" : "appFileSorter_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "appFileSorter_autogen::@6890427a1f51a3e7e1df"
+			"backtrace" : 79,
+			"id" : "appFileSorter_tooling::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "appFileSorter_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 79,
-			"id" : "appFileSorter_qmlimportscan::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "appFileSorter_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appFileSorter::@6890427a1f51a3e7e1df",
@@ -1138,7 +1146,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-DQT_QML_DEBUG -g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -1351,7 +1359,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appFileSorter_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1363,21 +1371,21 @@
 		{
 			"backtrace" : 84,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/meta_types/qt6appfilesorter_debug_metatypes.json.gen",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/meta_types/qt6appfilesorter_release_metatypes.json.gen",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 85,
 			"compileGroupIndex" : 1,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appfilesorter_qmltyperegistrations.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appfilesorter_qmltyperegistrations.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 90,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_FileSorter.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qrc_qmake_FileSorter.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1400,14 +1408,14 @@
 			"backtrace" : 94,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 95,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_Main_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_Main_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1419,7 +1427,7 @@
 			"backtrace" : 97,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1431,7 +1439,7 @@
 			"backtrace" : 99,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1443,7 +1451,7 @@
 			"backtrace" : 101,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1455,7 +1463,7 @@
 			"backtrace" : 103,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1467,32 +1475,32 @@
 			"backtrace" : 105,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 109,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 111,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_FileSorter.qrc",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qmake_FileSorter.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 111,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/FileSorter/qmldir",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/FileSorter/qmldir",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 111,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appFileSorter_raw_qml_0.qrc",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/appFileSorter_raw_qml_0.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1528,85 +1536,85 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appFileSorter_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/meta_types/qt6appfilesorter_debug_metatypes.json.gen.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/meta_types/qt6appfilesorter_release_metatypes.json.gen.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appfilesorter_qmltyperegistrations.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appfilesorter_qmltyperegistrations.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_FileSorter.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qrc_qmake_FileSorter.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_qmlcache_loader.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_Main_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_Main_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_ColorProperties_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_CustomCheckBox_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_MainHeader_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_CustomFonts_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.rcc/qmlcache/appFileSorter_SortSettings_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/.qt/rcc/qrc_appFileSorter_raw_qml_0.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appFileSorter_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/appFileSorter_autogen/timestamp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/meta_types/appFileSorter_json_file_list.txt.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/meta_types/appFileSorter_json_file_list.txt.rule",
 			"sourceGroupIndex" : 4
 		},
 		{
